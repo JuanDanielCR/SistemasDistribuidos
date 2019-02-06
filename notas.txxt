@@ -1,0 +1,66 @@
+Sistemas distribuidos
+
+Conjuntos de componentes de hardaware y software que coordinan sus funciones a través de meensajes que se envían a través de un red.
+
+Sistemas distribudos más grandes:
+
+1. Internet - con los mismos routers ya mandandose mensajes incluso cuando nadie se conecte (mensaje para corroborar el estado por ejemplo)
+
+2. Google Search
+
+Concpetos:
+1. Heterogeneidad: Gran cantidad de hardware, SO y lenguajes de programación en el mismo sistema distribuido conviviendo
+
+2. Escalabilidad
+3. Transparencia
+4. Seguridad
+5. Middleware - Ejemplos CORBA y Java RMI
+
+
+----Redes 3
+Installer de Debian
+0. Install to hard
+1. Use entire disk guided (segunda opcion)
+2. Yes - Tablas de particiones
+3. Instalar GRUB
+
+Iniciar maquina virtual
+1. Definir root password
+2. Definir mysql root password
+3. Definir admin password  -- root != admin
+4. Skip en initialize hub services
+5. Skip system notifications ans critical security alerts
+6. Skip Security updates
+7. Salir a la terminal
+
+Terminal
+1. Observium login - User: root 
+
+Ahora la máquina virtual es un nodo de la red.
+
+Navegador:
+1. Ingresar la IP  de observium 
+2. Credenciales de Admin
+
+---Windows
+1. Tener activado SNMP Service y SNMP Trap
+2. Tener desactivados firewalls o antovirus, pues usamos un puerto del rango restringido
+
+Servicio SNMP
+1. Traps > Agregar un nombre comunidad
+2. Seguridad > Agregar permiso READ WRITE
+3. Permitir hosts
+4. Reiniciar servicios
+
+---Dar de alta una agente en Observium
+Consola de observium
+
+En el archivo hosts, agregar un hostname para agente que se desea agregar, poniendo una IP y un host
+# nano /etc/hosts
+	10.100.70.129 windows
+
+Ya se puede ahcer ping directo al hostname
+# ping windows8
+
+--- Navegador
+En el menu de arriba elegir add device
